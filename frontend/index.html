@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NovaCart | Premium Tech Store</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+      <header>
+
+    <nav class="navbar">
+
+        <div class="container">
+
+            <a href="#" class="logo">
+
+                <i class="fa-solid fa-bag-shopping"></i>
+
+                <span>NovaCart</span>
+
+            </a>
+
+            <ul class="nav-links">
+
+                <li><a href="#">Home</a></li>
+
+                <li><a href="#">Products</a></li>
+
+                <li><a href="#">Categories</a></li>
+
+                <li><a href="#">Deals</a></li>
+
+                <li><a href="#">About Us</a></li>
+
+            </ul>
+
+            <div class="nav-icons">
+
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+
+                <a href="#" class="cart">
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                    <span>0</span>
+
+                </a>
+
+                <a href="#" class="login-btn">
+
+                    Login
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+<!-- ================= HERO SECTION ================= -->
+
+<section class="hero">
+
+    <div class="container hero-container">
+
+        <div class="hero-content">
+
+            <span class="hero-badge">
+                Welcome to NovaCart
+            </span>
+
+            <h1>
+
+                Discover Premium
+                <br>
+
+                Tech Products
+
+            </h1>
+
+            <p>
+
+                Find the latest gadgets,
+                accessories and premium electronics
+                at the best prices.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#" class="primary-btn">
+                    Shop Now
+                </a>
+
+                <a href="#" class="secondary-btn">
+                    Explore Deals
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+    <div class="circle"></div>
+
+         <img src="images/hero.png" alt="Hero Image">
+
+    </div>
+
+</div>
+
+</section>
+<!-- ================= FEATURES ================= -->
+
+<section class="features">
+
+    <div class="container feature-container">
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-truck-fast"></i>
+
+            <div>
+
+                <h4>Free Shipping</h4>
+
+                <p>On orders over $50</p>
+
+            </div>
+
+        </div>
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-shield-halved"></i>
+
+            <div>
+
+                <h4>Secure Payment</h4>
+
+                <p>100% secure payment</p>
+
+            </div>
+
+        </div>
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-rotate-left"></i>
+
+            <div>
+
+                <h4>Easy Returns</h4>
+
+                <p>30 days return policy</p>
+
+            </div>
+
+        </div>
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-headset"></i>
+
+            <div>
+
+                <h4>24/7 Support</h4>
+
+                <p>Dedicated support</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= CATEGORIES ================= -->
+
+<section class="categories">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <h2>Categories</h2>
+
+            <a href="#">View All <i class="fa-solid fa-arrow-right"></i></a>
+
+        </div>
+
+        <div class="category-grid">
+
+            <div class="category-card">
+
+                <img src="images/phone.png" alt="Phone">
+
+                <h3>Phones</h3>
+
+                <p>Latest Smartphones</p>
+
+            </div>
+
+            <div class="category-card">
+
+                <img src="images/laptop.png" alt="Laptop">
+
+                <h3>Laptops</h3>
+
+                <p>Powerful Laptops</p>
+
+            </div>
+
+            <div class="category-card">
+
+                <img src="images/watch.png" alt="Watch">
+
+                <h3>Smart Watches</h3>
+
+                <p>Wearable Tech</p>
+
+            </div>
+
+            <div class="category-card">
+
+                <img src="images/accessories.png" alt="Accessories">
+
+                <h3>Accessories</h3>
+
+                <p>Premium Accessories</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= FEATURED PRODUCTS ================= -->
+
+<section class="products">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <h2>Featured Products</h2>
+
+            <a href="#">
+                View All
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+        <div class="product-grid" id="productGrid">
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= WHY CHOOSE US ================= -->
+
+<section class="why-us">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <h2>Why Choose NovaCart</h2>
+
+        </div>
+
+        <div class="why-grid">
+
+            <div class="why-card">
+
+                <i class="fa-solid fa-truck-fast"></i>
+
+                <h3>Fast Delivery</h3>
+
+                <p>Get your products delivered quickly with our trusted delivery partners.</p>
+
+            </div>
+
+            <div class="why-card">
+
+                <i class="fa-solid fa-credit-card"></i>
+
+                <h3>Secure Payment</h3>
+
+                <p>Pay safely using secure payment methods with complete protection.</p>
+
+            </div>
+
+            <div class="why-card">
+
+                <i class="fa-solid fa-medal"></i>
+
+                <h3>Premium Quality</h3>
+
+                <p>Every product is carefully selected to maintain premium quality standards.</p>
+
+            </div>
+
+            <div class="why-card">
+
+                <i class="fa-solid fa-headset"></i>
+
+                <h3>24/7 Support</h3>
+
+                <p>Our customer support team is always ready to help you anytime.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= TESTIMONIALS ================= -->
+
+<section class="testimonials">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <h2>What Our Customers Say</h2>
+
+        </div>
+
+        <div class="testimonial-grid">
+
+            <div class="testimonial-card">
+
+                <img src="images/user1.png" alt="Customer">
+
+                <h3>Rahul Sharma</h3>
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    Amazing shopping experience.
+                    Fast delivery and genuine products.
+                </p>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <img src="images/user2.png" alt="Customer">
+
+                <h3>Ayesha Khan</h3>
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    Premium quality products with
+                    excellent customer support.
+                </p>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <img src="images/user3.png" alt="Customer">
+
+                <h3>Arjun Verma</h3>
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    My favorite tech store.
+                    Everything arrived on time.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter">
+
+    <div class="container newsletter-box">
+
+        <h2>Subscribe to Our Newsletter</h2>
+
+        <p>
+            Get the latest products, exclusive offers and tech updates delivered to your inbox.
+        </p>
+
+        <form class="newsletter-form">
+
+            <input
+                type="email"
+                placeholder="Enter your email address"
+                required
+            >
+
+            <button type="submit">
+                Subscribe
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div class="footer-column">
+
+            <h2>NovaCart</h2>
+
+            <p>
+                Your trusted destination for premium tech products,
+                smart gadgets and accessories.
+            </p>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="#">Home</a></li>
+
+                <li><a href="#">Products</a></li>
+
+                <li><a href="#">Categories</a></li>
+
+                <li><a href="#">About</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>Categories</h3>
+
+            <ul>
+
+                <li><a href="#">Phones</a></li>
+
+                <li><a href="#">Laptops</a></li>
+
+                <li><a href="#">Smart Watches</a></li>
+
+                <li><a href="#">Accessories</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>Contact</h3>
+
+            <p>Email : support@novacart.com</p>
+
+            <p>Phone : +91 9876543210</p>
+
+            <div class="social-icons">
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        © 2026 NovaCart. All Rights Reserved.
+
+    </div>
+
+</footer>
+<script src="js/script.js"></script>
+</body>
+
+</html>

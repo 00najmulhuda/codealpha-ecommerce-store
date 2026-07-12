@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Details | NovaCart</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/details.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="/" class="logo">
+
+                <i class="fa-solid fa-bag-shopping"></i>
+
+                NovaCart
+
+            </a>
+
+            <nav>
+
+                <ul class="nav-links">
+
+                    <li><a href="/">Home</a></li>
+
+                    <li><a href="/products">Products</a></li>
+
+                    <li><a href="/cart">cart</a></li>
+
+                    <li><a href="/login">login</a></li>
+
+
+                </ul>
+
+            </nav>
+
+            <div class="nav-icons">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <a href="/cart" class="cart-btn">
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                    <span>0</span>
+
+                </a>
+
+                <a href="#" class="login-btn">
+
+                    Login
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ================= BREADCRUMB ================= -->
+
+    <section class="breadcrumb">
+
+        <div class="container">
+
+            <p>
+
+                <a href="/">Home</a>
+
+                /
+
+                <a href="/products">Products</a>
+
+                /
+
+                <span>iPhone 15 Pro Max</span>
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PRODUCT DETAILS ================= -->
+
+    <section class="product-details">
+
+        <div class="container details-grid">
+
+            <!-- Left -->
+
+            <div class="product-gallery">
+
+                <div class="main-image">
+
+                    <img id="productImage" src="/static/images/iphone.png" alt="iPhone">
+
+                </div>
+
+                <div class="thumbnail-gallery">
+
+                    <img src="/static/images/iphone.png" alt="">
+
+                    <img src="/static/images/iphone.png" alt="">
+
+                    <img src="/static/images/iphone.png" alt="">
+
+                    <img src="/static/images/iphone.png" alt="">
+
+                </div>
+
+            </div>
+
+            <!-- Right -->
+
+            <div class="product-info">
+
+                <h1 id="productName">iPhone 15 Pro Max 256GB</h1>
+
+                <div class="rating">
+
+                    ★★★★★
+
+                    <span>(126 Reviews)</span>
+
+                </div>
+
+                <div class="price">
+
+                    <span class="new-price" id="productPrice">$999</span>
+
+                    <span class="old-price" id="productOldPrice">$1099</span>
+
+                </div>
+
+                <p class="description" id="productDescription">
+
+                    Experience Apple's latest flagship smartphone featuring
+                    the powerful A17 Pro chip, premium titanium design,
+                    advanced triple-camera system and all-day battery life.
+
+                </p>
+
+                <h3>Storage</h3>
+
+                <div class="storage-options">
+
+                    <button>128GB</button>
+
+                    <button class="active-storage">256GB</button>
+
+                    <button>512GB</button>
+
+                    <button>1TB</button>
+
+                </div>
+
+                <h3>Color</h3>
+
+                <div class="color-options">
+
+                    <span class="color black"></span>
+
+                    <span class="color silver"></span>
+
+                    <span class="color blue active-color"></span>
+
+                </div>
+
+                <h3>Quantity</h3>
+
+                <div class="quantity-box">
+
+                    <button>-</button>
+
+                    <span>1</span>
+
+                    <button>+</button>
+
+                </div>
+
+                <div class="action-buttons">
+
+                    <button class="cart-button" id="addToCartBtn">
+
+                        Add To Cart
+
+                    </button>
+
+                    <button class="buy-button">
+
+                        Buy Now
+
+                    </button>
+
+                </div>
+
+                <div class="features">
+
+                    <div>
+
+                        <i class="fa-solid fa-truck"></i>
+
+                        Free Shipping
+
+                    </div>
+
+                    <div>
+
+                        <i class="fa-solid fa-rotate-left"></i>
+
+                        30 Days Return
+
+                    </div>
+
+                    <div>
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                        Secure Payment
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= RELATED PRODUCTS ================= -->
+
+    <section class="related-products">
+
+        <div class="container">
+
+            <h2>Related Products</h2>
+
+            <div class="related-grid">
+
+                <div class="related-card">
+
+                    <img id="productImage" src="/static/images/headphone.png" alt="">
+
+                    <h3>Sony WH-1000XM5</h3>
+
+                    <p>$349</p>
+
+                </div>
+
+                <div class="related-card">
+
+                    <img id="productImage" src="/static/images/macbook.png" alt="">
+
+                    <h3>MacBook Air M2</h3>
+
+                    <p>$1199</p>
+
+                </div>
+
+                <div class="related-card">
+
+                    <img id="productImage" src="/static/images/watch.png" alt="">
+
+                    <h3>Apple Watch Series 9</h3>
+
+                    <p>$399</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= NEWSLETTER ================= -->
+
+    <section class="newsletter">
+
+        <div class="container newsletter-box">
+
+            <h2>Subscribe to Our Newsletter</h2>
+
+            <p>
+
+                Get latest products and exclusive offers directly in your inbox.
+
+            </p>
+
+            <form>
+
+                <input type="email" placeholder="Enter your email">
+
+                <button>
+
+                    Subscribe
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="container footer-grid">
+
+            <div>
+
+                <h2>NovaCart</h2>
+
+                <p>
+
+                    Your trusted destination for premium technology products.
+
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>Quick Links</h3>
+
+                <a href="/">Home</a>
+
+                <a href="/products">Products</a>
+
+                <a href="#">About</a>
+
+            </div>
+
+            <div>
+
+                <h3>Categories</h3>
+
+                <a href="#">Phones</a>
+
+                <a href="#">Laptops</a>
+
+                <a href="#">Accessories</a>
+
+            </div>
+
+            <div>
+
+                <h3>Contact</h3>
+
+                <p>support@novacart.com</p>
+
+                <p>+91 9876543210</p>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+
+            © 2026 NovaCart. All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+    <script src="/static/js/product-details.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout | NovaCart</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/checkout.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="/" class="logo">
+
+                <i class="fa-solid fa-bag-shopping"></i>
+
+                NovaCart
+
+            </a>
+
+            <nav>
+
+                <ul class="nav-links">
+
+                    <li><a href="/">Home</a></li>
+
+                    <li><a href="/products">Products</a></li>
+
+                    <li><a href="/cart">cart</a></li>
+
+                    <li><a href="/login">login</a></li>
+
+
+                </ul>
+
+            </nav>
+
+            <div class="nav-icons">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <a href="/cart" class="cart-btn">
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                    <span>3</span>
+
+                </a>
+
+                <a href="#" class="login-btn">
+
+                    Login
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ================= BREADCRUMB ================= -->
+
+    <section class="breadcrumb">
+
+        <div class="container">
+
+            <p>
+
+                <a href="/">Home</a>
+
+                /
+
+                <a href="/cart">Shopping Cart</a>
+
+                /
+
+                <span>Checkout</span>
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CHECKOUT ================= -->
+
+    <section class="checkout-page">
+
+        <div class="container checkout-layout">
+
+            <!-- Shipping Information -->
+
+            <div class="checkout-form">
+
+                <h2>Shipping Information</h2>
+
+                <form>
+
+                    <input type="text" placeholder="Full Name">
+
+                    <input type="email" placeholder="Email Address">
+
+                    <input type="tel" placeholder="Phone Number">
+
+                    <textarea placeholder="Full Address"></textarea>
+
+                    <div class="two-column">
+
+                        <input type="text" placeholder="City">
+
+                        <input type="text" placeholder="State">
+
+                    </div>
+
+                    <input type="text" placeholder="PIN Code">
+
+                </form>
+
+            </div>
+
+            <!-- Payment Method -->
+
+            <div class="payment-method">
+
+                <h2>Payment Method</h2>
+
+                <label>
+
+                    <input type="radio" name="payment" checked>
+
+                    Credit / Debit Card
+
+                </label>
+
+                <label>
+
+                    <input type="radio" name="payment">
+
+                    UPI
+
+                </label>
+
+                <label>
+
+                    <input type="radio" name="payment">
+
+                    Net Banking
+
+                </label>
+
+                <label>
+
+                    <input type="radio" name="payment">
+
+                    Cash On Delivery
+
+                </label>
+
+            </div>
+
+            <!-- Order Summary -->
+
+            <aside class="order-summary">
+
+                <h2>Order Summary</h2>
+
+                <div class="summary-item">
+
+                    <span>iPhone 15 Pro Max ×1</span>
+
+                    <span>$999</span>
+
+                </div>
+
+                <div class="summary-item">
+
+                    <span>Sony WH-1000XM5 ×1</span>
+
+                    <span>$349</span>
+
+                </div>
+
+                <div class="summary-item">
+
+                    <span>Apple Watch Series 9 ×1</span>
+
+                    <span>$399</span>
+
+                </div>
+
+                <hr>
+
+                <div class="summary-item">
+
+                    <span>Subtotal</span>
+
+                    <span>$1747</span>
+
+                </div>
+
+                <div class="summary-item">
+
+                    <span>Shipping</span>
+
+                    <span>Free</span>
+
+                </div>
+
+                <div class="summary-item">
+
+                    <span>Tax (10%)</span>
+
+                    <span>$174.70</span>
+
+                </div>
+
+                <hr>
+
+                <div class="summary-total">
+
+                    <span>Total</span>
+
+                    <span>$1921.70</span>
+
+                </div>
+
+                <a href="/order-success" class="place-order-btn">
+
+                    Place Order
+
+                </a>
+
+                <p class="secure-payment">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    100% Secure Payment
+
+                </p>
+
+            </aside>
+
+        </div>
+
+    </section>
+
+    <!-- ================= NEWSLETTER ================= -->
+
+    <section class="newsletter">
+
+        <div class="container newsletter-box">
+
+            <h2>Subscribe to Our Newsletter</h2>
+
+            <p>
+
+                Get exclusive offers and latest product updates.
+
+            </p>
+
+            <form>
+
+                <input type="email" placeholder="Enter your email">
+
+                <button>
+
+                    Subscribe
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="container footer-grid">
+
+            <div>
+
+                <h2>NovaCart</h2>
+
+                <p>
+
+                    Your trusted destination for premium technology products.
+
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>Quick Links</h3>
+
+                <a href="/">Home</a>
+
+                <a href="/products">Products</a>
+
+                <a href="#">About</a>
+
+            </div>
+
+            <div>
+
+                <h3>Categories</h3>
+
+                <a href="#">Phones</a>
+
+                <a href="#">Laptops</a>
+
+                <a href="#">Accessories</a>
+
+            </div>
+
+            <div>
+
+                <h3>Contact</h3>
+
+                <p>support@novacart.com</p>
+
+                <p>+91 9876543210</p>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+
+            © 2026 NovaCart. All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+    <script src="/static/js/checkout.js"></script>
+
+</body>
+
+</html>

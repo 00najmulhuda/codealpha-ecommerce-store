@@ -1,0 +1,290 @@
+/* ==========================================
+   CART PAGE
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f7f8fc;
+    color:#111827;
+}
+
+/* Breadcrumb */
+
+.breadcrumb{
+    background:#fff;
+    padding:18px 0;
+    border-bottom:1px solid #ececec;
+}
+
+.breadcrumb p{
+    font-size:15px;
+}
+
+.breadcrumb a{
+    color:#2563eb;
+    text-decoration:none;
+}
+
+/* Cart */
+
+.cart-page{
+    padding:70px 0;
+}
+
+.cart-layout{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:35px;
+}
+
+/* Left */
+
+.cart-items h2{
+    margin-bottom:25px;
+    font-size:38px;
+}
+
+.cart-item{
+    display:grid;
+    grid-template-columns:120px 1fr 140px 100px 60px;
+    gap:20px;
+    align-items:center;
+    background:#fff;
+    padding:20px;
+    margin-bottom:25px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+
+.cart-item img{
+    width:100px;
+    height:100px;
+    object-fit:contain;
+}
+
+.cart-info h3{
+    margin-bottom:8px;
+    font-size:24px;
+}
+
+.cart-info p{
+    color:#666;
+    margin-bottom:10px;
+}
+
+.cart-info span{
+    color:#2563eb;
+    font-weight:700;
+    font-size:22px;
+}
+
+/* Quantity */
+
+.quantity{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.quantity button{
+    width:38px;
+    height:38px;
+    border:none;
+    background:#2563eb;
+    color:#fff;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.quantity span{
+    font-weight:600;
+}
+
+/* Subtotal */
+
+.subtotal{
+    font-size:22px;
+    font-weight:700;
+    color:#111827;
+}
+
+/* Remove */
+
+.remove{
+    border:none;
+    background:#ef4444;
+    color:#fff;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.remove:hover{
+    background:#dc2626;
+}
+
+/* Summary */
+
+.order-summary{
+    background:#fff;
+    padding:30px;
+    border-radius:18px;
+    height:fit-content;
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+
+.order-summary h2{
+    margin-bottom:25px;
+}
+
+.summary-row,
+.summary-total{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:18px;
+    font-size:17px;
+}
+
+.summary-total{
+    margin-top:20px;
+    font-size:22px;
+    font-weight:700;
+}
+
+.checkout-btn,
+.continue-btn{
+    display:block;
+    text-align:center;
+    padding:15px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:600;
+    margin-top:20px;
+    transition:.3s;
+}
+
+.checkout-btn{
+    background:#2563eb;
+    color:#fff;
+}
+
+.checkout-btn:hover{
+    background:#1d4ed8;
+}
+
+.continue-btn{
+    border:2px solid #2563eb;
+    color:#2563eb;
+}
+
+.continue-btn:hover{
+    background:#2563eb;
+    color:#fff;
+}
+
+/* Newsletter */
+
+.newsletter{
+    padding:80px 0;
+}
+
+.newsletter-box{
+    background:#2563eb;
+    padding:60px;
+    text-align:center;
+    color:#fff;
+    border-radius:24px;
+}
+
+.newsletter-box h2{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.newsletter-box p{
+    margin-bottom:30px;
+}
+
+.newsletter-box form{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.newsletter-box input{
+    width:420px;
+    max-width:100%;
+    padding:16px;
+    border:none;
+    border-radius:12px;
+}
+
+.newsletter-box button{
+    padding:16px 30px;
+    border:none;
+    border-radius:12px;
+    background:#111827;
+    color:#fff;
+    cursor:pointer;
+}
+
+/* Responsive */
+
+@media(max-width:1100px){
+
+.cart-layout{
+    grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:768px){
+
+.cart-item{
+    grid-template-columns:1fr;
+    text-align:center;
+}
+
+.cart-item img{
+    margin:auto;
+}
+
+.quantity{
+    justify-content:center;
+}
+
+.newsletter-box{
+    padding:40px 25px;
+}
+
+.newsletter-box h2{
+    font-size:30px;
+}
+
+}
+
+@media(max-width:500px){
+
+.cart-items h2{
+    font-size:30px;
+}
+
+.cart-info h3{
+    font-size:20px;
+}
+
+.summary-total{
+    font-size:20px;
+}
+
+}

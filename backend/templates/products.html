@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products | NovaCart</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet" href="/static/css/style.css">
+<link rel="stylesheet" href="/static/css/products.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="container nav-container">
+        <a href="/" class="logo">
+            <i class="fa-solid fa-bag-shopping"></i>
+            NovaCart
+        </a>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+
+                <li><a href="/products">Products</a></li>
+
+                <li><a href="/cart">cart</a></li>
+
+                <li><a href="/login">login</a></li>
+
+            </ul>
+        </nav>
+
+        <div class="nav-icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <a href="/cart" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>0</span>
+            </a>
+
+            <a href="#" class="login-btn">Login</a>
+        </div>
+    </div>
+</header>
+
+<section class="breadcrumb">
+    <div class="container">
+        <p><a href="/">Home</a> / <span>Products</span></p>
+    </div>
+</section>
+
+<section class="page-header">
+    <div class="products-actions">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search products...">
+
+    <select id="sortSelect">
+
+        <option value="popular">Sort by Popular</option>
+
+        <option value="low-high">Price Low to High</option>
+
+        <option value="high-low">Price High to Low</option>
+
+    </select>
+
+    </div>
+</section>
+
+<section class="products-page">
+    <div class="container products-layout">
+
+        <aside class="sidebar">
+
+            <div class="sidebar-card">
+                <h3>Categories</h3>
+                <ul id="categoryList">
+
+                   <li data-category="All Products">All Products</li>
+
+                   <li data-category="Phones">Phones</li>
+
+                   <li data-category="Laptops">Laptops</li>
+
+                   <li data-category="Smart Watches">Smart Watches</li>
+
+                   <li data-category="Accessories">Accessories</li>
+
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <h3>Price Range</h3>
+                <input type="range" min="0" max="3000">
+                <button>Filter</button>
+            </div>
+
+        </aside>
+
+        <div id="productsGrid" class="product-grid">
+            <!-- Products rendered by products.js -->
+        </div>
+
+    </div>
+</section>
+
+<section class="newsletter">
+    <div class="container newsletter-box">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Get latest products and exclusive offers directly in your inbox.</p>
+
+        <form>
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="container footer-grid">
+
+        <div>
+            <h2>NovaCart</h2>
+            <p>Your trusted destination for premium tech products.</p>
+        </div>
+
+        <div>
+            <h3>Quick Links</h3>
+            <a href="/">Home</a>
+            <a href="/products">Products</a>
+            <a href="/categories">Categories</a>
+            <a href="#">About</a>
+        </div>
+
+        <div>
+            <h3>Categories</h3>
+            <a href="#">Phones</a>
+            <a href="#">Laptops</a>
+            <a href="#">Smart Watches</a>
+            <a href="#">Accessories</a>
+        </div>
+
+        <div>
+            <h3>Contact</h3>
+            <p>support@novacart.com</p>
+            <p>+91 9876543210</p>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 NovaCart. All Rights Reserved.
+    </div>
+</footer>
+
+<script src="/static/js/products.js"></script>
+
+</body>
+</html>
